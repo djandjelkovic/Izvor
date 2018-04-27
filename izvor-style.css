@@ -40,7 +40,7 @@
     outline: none;
 }
 
-#menu-block ul li:hover>ul {
+#menu-block ul li:hover > ul {
     display: block;
     transition: all 4s;
 }
@@ -66,13 +66,10 @@
 #all {
 
     background: url("img/slide5.jpg") no-repeat;
-
     background-attachment: fixed;
     background-size: cover;
-
     height: 500px;
 }
-
 
 #slide-text img {
     height: 200px;
@@ -94,7 +91,6 @@
     opacity: 0.5;
 }
 
-
 #about hr,
 #contact hr,
 #menu-full hr,
@@ -109,8 +105,8 @@
 .text-content {
     background: #cccccc;
     line-height: 26px;
+    font-size: 20px;
 }
-
 
 .buttons {
     width: 220px;
@@ -143,7 +139,7 @@
 }
 
 #contact-photos {
-    margin-top: 70px;
+    margin-top: 30px;
 
 }
 
@@ -222,11 +218,24 @@
     font-size: 40px;
 }
 
+#footer-logo img {
+    height: 80px;
+}
+
+#gallery-border{
+    border:2px solid orange;
+    margin-top: 50px;
+
+}
+
+
+
 
 @media screen and (max-width: 790px) {
     #all {
         width: 100%;
     }
+
     #about,
     #menu-full,
     #menu-left,
@@ -235,34 +244,91 @@
     #contact,
     #thumbs,
     #slide-block,
-    #footer {
+    #footer,
+    #footer-end,
+    #footer-one {
         width: 100%;
     }
-    #footer-one,
-    #footer-end {
-        width: 50%;
+
+
+
+    #slide-block img {
+        height: 200px;
     }
 
-    #footer-logo,
+    #thumbs img {
+        height: 20px;
+
+    }
+
+    #footer-logo {
+        width: 100%;
+
+    }
+
+    #footer-logo img {
+        height: 50px;
+        float: left;
+    }
+
     #footer-social {
         width: 100%;
     }
+
+    #footer-social img {
+        height: 20px;
+        float: left;
+
+    }
+
+    #footer-end p {
+        margin: 0;
+
+    }
+
     hr,
     #footerflor,
     #menu-block {
         display: none;
     }
+
     .buttons {
-        width: 90%;
-        font-size: 13px;
+        width: 100%;
+        height: 35px;
+        font-size: 10px;
     }
 
     #logofirst {
         width: 100%;
 
     }
+
     #social-icons {
         width: 50%;
         margin-top: 20px;
+    }
+
+    #contact-photos {
+        margin: 0;
+    }
+
+    #contact-photos h1 {
+        margin: 0;
+    }
+
+    #background1 {
+        height: 100px;
+    }
+    #all {
+
+    height: 300px;}
+
+    .photos-icons img {
+        height: 50px;
+    }
+    .text-content h3{
+
+        line-height: 15px;
+
     }
 }
